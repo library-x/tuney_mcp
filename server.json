@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.library-x/tuney",
+  "description": "Royalty-free music fitted to your length: find, generate, adjust and download tracks and stems.",
+  "version": "1.0.0",
+  "websiteUrl": "https://tuney.io",
+  "repository": {
+    "url": "https://github.com/library-x/tuney_mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.tuney.io/cue-engine2/connector/mcp"
+    }
+  ]
+}
