@@ -20,6 +20,11 @@ Tuney is royalty-free music for video, ads, podcasts, games and apps, built from
 | `adjust_track` | Re-renders a track with a new length, a turning point, a fade-out or short ending, a tempo or key change, stems muted or regenerated | no |
 | `download_track` | Gives a download link for the final file as mp3, wav or stems (melody, chords, bass, drums, effects) | yes |
 | `get_account` | Shows which Tuney account is connected and its credit balance | no |
+| `import_video` | Brings in a video from a public link to the file | no |
+| `get_video_upload_link` | Gives a one-time link to send a local video file (curl `-T`), up to 100 MB | no |
+| `analyze_video` | Shows the picture cuts, where people speak, and a sonic-logo guess | no |
+| `score_video` | Composes music to the video's cuts, ending before the sonic logo, and renders the video with it | no |
+| `render_video` | Puts one of your tracks under a video, lowered while people speak | no |
 
 You never call the tools yourself. Ask your assistant for what you need, for example:
 
@@ -28,6 +33,10 @@ You never call the tools yourself. Ask your assistant for what you need, for exa
 - "Make it 60 seconds with a turning point at 30 and a short ending."
 - "Drop the drums for the voice-over part."
 - "Download it as stems."
+- "Score this ad: upbeat pop, end before the logo." (with a video link or file)
+
+File links in results (previews, downloads, rendered videos) are on `api.tuney.io` and expire after six
+hours. If your assistant runs in a sandbox with restricted network access, allow `api.tuney.io`.
 
 ## Connect from your client
 
