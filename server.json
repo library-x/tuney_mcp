@@ -1,9 +1,22 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.library-x/tuney",
-  "description": "Royalty-free music fitted to your length: find, generate, adjust and download tracks and stems.",
-  "version": "1.0.0",
+  "title": "Tuney",
+  "description": "Royalty-free music fitted to your length or video: find, generate and adjust tracks, score videos.",
+  "version": "1.1.0",
   "websiteUrl": "https://tuney.io",
+  "icons": [
+    {
+      "src": "https://api.tuney.io/cue-engine2/connector/icon.png",
+      "mimeType": "image/png",
+      "sizes": ["384x384"]
+    },
+    {
+      "src": "https://api.tuney.io/cue-engine2/connector/icon-192.png",
+      "mimeType": "image/png",
+      "sizes": ["192x192"]
+    }
+  ],
   "repository": {
     "url": "https://github.com/library-x/tuney_mcp",
     "source": "github"
